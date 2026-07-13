@@ -6,6 +6,9 @@
         "name": "Poyotoron"
     },
     "description": "Poyotoron's VPM repository for VRChat.",
+    "githubRepos": [
+        "Poyotoron/Asset-Keshichaumon-Nator"
+    ],
     "packages": [
     ]
 }

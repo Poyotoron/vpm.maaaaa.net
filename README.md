@@ -40,6 +40,6 @@ vrc-get install <package-id>
 
 | パッケージ | ID | 説明 |
 | --- | --- | --- |
-| _まだありません_ | | |
+| [いらないアセット消しちゃうもんネーター](https://github.com/Poyotoron/Asset-Keshichaumon-Nator) | `net.maaaaa.asset-keshichaumon-nator` | アバターから参照されていない未使用アセットを検出し、安全に退避します。 |
 
 > パッケージを追加したら、この表を更新してください。
