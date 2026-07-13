@@ -1,0 +1,11 @@
+{
+    "name": "Poyo's VPM Repo",
+    "id": "net.maaaaa.vpm",
+    "url": "https://vpm.maaaaa.net/index.json",
+    "author": {
+        "name": "Poyotoron"
+    },
+    "description": "Poyotoron's VPM repository for VRChat.",
+    "packages": [
+    ]
+}
