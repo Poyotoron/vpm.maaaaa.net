@@ -42,5 +42,6 @@ vrc-get install <package-id>
 | --- | --- | --- |
 | [いらないアセット消しちゃうもんネーター](https://github.com/Poyotoron/Asset-Keshichaumon-Nator) | `net.maaaaa.asset-keshichaumon-nator` | アバターから参照されていない未使用アセットを検出し、安全に退避します。 |
 | [アセット参照直すネーター](https://github.com/Poyotoron/Asset-Sanshounaosu-Nator) | `net.maaaaa.asset-sanshounaosu-nator` | Prefab の壊れた参照 (Missing Reference) を検査・診断・修復する Editor 拡張です。 |
+| [Irodori Colorizer](https://github.com/Poyotoron/Irodori-Colorizer) | `net.maaaaa.irodori-colorizer` | Project / Hierarchy の行に色付きラベルを付与するエディタ拡張です。 |
 
 > パッケージを追加したら、この表を更新してください。
