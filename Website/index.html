@@ -15,6 +15,7 @@
     table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
     th, td { text-align: left; padding: .5rem; border-bottom: 1px solid #8884; }
     code { font-size: .9em; }
+    td.links a { margin-right: .75rem; white-space: nowrap; }
   </style>
 </head>
 <body>
@@ -31,12 +32,20 @@
   {{ if packages.size > 0 }}
   <h2>Packages</h2>
   <table>
-    <thead><tr><th>Name</th><th>Version</th></tr></thead>
+    <thead><tr><th>Name</th><th>Version</th><th>Links</th></tr></thead>
     <tbody>
       {{ for package in packages }}
+      {{ repo = "" }}
+      {{ if package.ZipUrl && (string.starts_with package.ZipUrl "https://github.com/") }}
+        {{ parts = string.split package.ZipUrl "/" }}
+        {{ if (array.size parts) > 4 }}{{ repo = "https://github.com/" + parts[3] + "/" + parts[4] }}{{ end }}
+      {{ end }}
       <tr>
         <td>{{ package.DisplayName }}<br><code class="muted">{{ package.Name }}</code></td>
         <td>{{ package.Version }}</td>
+        <td class="links" data-package="{{ package.Name }}" data-repo="{{ repo }}">
+          {{ if repo }}<a href="{{ repo }}#readme" rel="noopener">Docs</a>{{ else }}<span class="muted">-</span>{{ end }}
+        </td>
       </tr>
       {{ end }}
     </tbody>
@@ -44,5 +53,7 @@
   {{ else }}
   <p class="muted">まだパッケージは登録されていません。</p>
   {{ end }}
+
+  <script src="app.js"></script>
 </body>
 </html>
