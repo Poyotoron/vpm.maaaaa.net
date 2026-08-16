@@ -6,7 +6,9 @@
 // generated index.json, so we read them back from there at runtime and upgrade
 // the statically rendered "Docs" link (which falls back to the GitHub repo).
 //
-// This file is also rendered by Scriban, so avoid literal "{{" sequences.
+// NOTE: this file is itself rendered by Scriban before publishing, so it must
+// never contain a doubled opening brace -- that opens a template block and the
+// rest of the file gets parsed as template script, failing the build.
 
 (function () {
   "use strict";
