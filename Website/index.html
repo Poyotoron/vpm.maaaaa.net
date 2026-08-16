@@ -38,8 +38,10 @@
       {{ for package in packages }}
       {{ repo = "" }}
       {{ if package.ZipUrl && (string.starts_with package.ZipUrl "https://github.com/") }}
+        {{ # string.split drops empty entries, so "https://github.com/O/R/..." is
+             ["https:", "github.com", "O", "R", ...] -- owner/repo are 2 and 3. }}
         {{ parts = string.split package.ZipUrl "/" }}
-        {{ if (array.size parts) > 4 }}{{ repo = "https://github.com/" + parts[3] + "/" + parts[4] }}{{ end }}
+        {{ if (array.size parts) > 3 }}{{ repo = "https://github.com/" + parts[2] + "/" + parts[3] }}{{ end }}
       {{ end }}
       <tr>
         <td>{{ package.DisplayName }}<br><code class="muted">{{ package.Name }}</code></td>
