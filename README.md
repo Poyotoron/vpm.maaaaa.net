@@ -44,5 +44,6 @@ vrc-get install <package-id>
 | [アセット参照直すネーター](https://github.com/Poyotoron/Asset-Sanshounaosu-Nator) | `net.maaaaa.asset-sanshounaosu-nator` | Prefab の壊れた参照 (Missing Reference) を検査・診断・修復する Editor 拡張です。 |
 | [Irodori Colorizer](https://github.com/Poyotoron/Irodori-Colorizer) | `net.maaaaa.irodori-colorizer` | Project / Hierarchy の行に色付きラベルを付与するエディタ拡張です。 |
 | [Candy Box](https://github.com/Poyotoron/Candy-Box) | `net.maaaaa.candy-box` | アバター改変向けの小さなエディタ拡張をまとめたパッケージです。使うツールだけを有効にできます。 |
+| [EXQv](https://github.com/Poyotoron/EXQv) | `net.maaaaa.exqv` | QvPen で描いた線を、アバターの体に追従させたり（BodyQv）、手で持てるようにしたり（GrabQv）するワールド用の拡張です。 |
 
 > パッケージを追加したら、この表を更新してください。
