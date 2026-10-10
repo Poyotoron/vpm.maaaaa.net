@@ -46,5 +46,6 @@ vrc-get install <package-id>
 | [Candy Box](https://github.com/Poyotoron/Candy-Box) | `net.maaaaa.candy-box` | アバター改変向けの小さなエディタ拡張をまとめたパッケージです。使うツールだけを有効にできます。 |
 | [EXQv](https://github.com/Poyotoron/EXQv) | `net.maaaaa.exqv` | QvPen で描いた線を、アバターの体に追従させたり（BodyQv）、手で持てるようにしたり（GrabQv）するワールド用の拡張です。 |
 | [Kaotsuki](https://github.com/Poyotoron/Kaotsuki) | `net.maaaaa.kaotsuki` | OSC からアバターの表情（ブレンドシェイプ）を操作するためのツールです。 |
+| [Marshmallow Jar](https://github.com/Poyotoron/Marshmallow-Jar) | `net.maaaaa.marshmallow-jar` | Unity エディタの使い勝手を整える小さな機能をまとめたパッケージです。機能ごとに ON / OFF できます。 |
 
 > パッケージを追加したら、この表を更新してください。
