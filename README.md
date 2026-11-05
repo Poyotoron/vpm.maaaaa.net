@@ -40,12 +40,11 @@ vrc-get install <package-id>
 
 | パッケージ | ID | 説明 |
 | --- | --- | --- |
-| [いらないアセット消しちゃうもんネーター](https://github.com/Poyotoron/Asset-Keshichaumon-Nator) | `net.maaaaa.asset-keshichaumon-nator` | アバターから参照されていない未使用アセットを検出し、安全に退避します。 |
-| [アセット参照直すネーター](https://github.com/Poyotoron/Asset-Sanshounaosu-Nator) | `net.maaaaa.asset-sanshounaosu-nator` | Prefab の壊れた参照 (Missing Reference) を検査・診断・修復する Editor 拡張です。 |
-| [Irodori Colorizer](https://github.com/Poyotoron/Irodori-Colorizer) | `net.maaaaa.irodori-colorizer` | Project / Hierarchy の行に色付きラベルを付与するエディタ拡張です。 |
-| [Candy Box](https://github.com/Poyotoron/Candy-Box) | `net.maaaaa.candy-box` | アバター改変向けの小さなエディタ拡張をまとめたパッケージです。使うツールだけを有効にできます。 |
+| [Poyo's Asset Cleaner](https://github.com/Poyotoron/Asset-Cleaner) | `net.maaaaa.asset-cleaner` | どのアバターからも使われていないアセットを見つけ、プロジェクトの外へ退避します。退避したものは元に戻せます。 |
+| [Poyo's Reference Fixer](https://github.com/Poyotoron/Ref-Fixer) | `net.maaaaa.ref-fixer` | Prefab の壊れた参照（Missing）を調べ、参照先の候補を探して直します。 |
+| [Poyo's Avatar Toolbox](https://github.com/Poyotoron/Avatar-Toolbox) | `net.maaaaa.avatar-toolbox` | アバター改変を手伝う小さなツールの詰め合わせです。使うツールだけを有効にできます。 |
 | [EXQv](https://github.com/Poyotoron/EXQv) | `net.maaaaa.exqv` | QvPen で描いた線を、アバターの体に追従させたり（BodyQv）、手で持てるようにしたり（GrabQv）するワールド用の拡張です。 |
-| [Kaotsuki](https://github.com/Poyotoron/Kaotsuki) | `net.maaaaa.kaotsuki` | OSC からアバターの表情（ブレンドシェイプ）を操作するためのツールです。 |
-| [Marshmallow Jar](https://github.com/Poyotoron/Marshmallow-Jar) | `net.maaaaa.marshmallow-jar` | Unity エディタの使い勝手を整える小さな機能をまとめたパッケージです。機能ごとに ON / OFF できます。 |
+| [Poyo's Face Util](https://github.com/Poyotoron/Face-Util) | `net.maaaaa.face-util` | アバターの表情（ブレンドシェイプ）を、PC のスライダーから OSC で動かします。 |
+| [Poyo's Editor Toolbox](https://github.com/Poyotoron/Editor-Toolbox) | `net.maaaaa.editor-toolbox` | Unity エディタの使い勝手を整える小さな機能の詰め合わせです。機能ごとに ON / OFF できます。 |
 
 > パッケージを追加したら、この表を更新してください。
