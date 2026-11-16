@@ -54,6 +54,20 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
  
+      - name: Remove renamed package IDs from listing
+        shell: bash
+        env:
+          # Website/index.html の renamed 配列と同じ内容に保つ。
+          RENAMED_PACKAGE_IDS: '["net.maaaaa.asset-keshichaumon-nator", "net.maaaaa.asset-sanshounaosu-nator", "net.maaaaa.candy-box", "net.maaaaa.kaotsuki", "net.maaaaa.marshmallow-jar"]'
+        run: |
+          set -euo pipefail
+          temp_file="$(mktemp)"
+          trap 'rm -f "$temp_file"' EXIT
+          jq --argjson ids "$RENAMED_PACKAGE_IDS" 'reduce $ids[] as $id (.; del(.packages[$id]))' Website/index.json > "$temp_file"
+          chmod 444 "$temp_file"
+          mv "$temp_file" Website/index.json
+          jq -e --argjson ids "$RENAMED_PACKAGE_IDS" '.packages | [$ids[] as $id | has($id)] | any | not' Website/index.json
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
         
